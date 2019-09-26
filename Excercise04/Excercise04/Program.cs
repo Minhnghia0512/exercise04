@@ -6,20 +6,16 @@ using System.Threading.Tasks;
 
 namespace Excercise04
 {
-    class Program
+   public class Program
     {
         static void Main(string[] args)
         {
+                if (IsOdd(6) == true)
+                Console.Write("so le");
+
+
         }
-        static bool IsOdd(int n)
-        {
-            if (n % 2 == 0)
-            {
-                return true;
-            }
-            return false;
-        }
-        static bool IsEven(int n)
+        public static bool IsOdd(int n)
         {
             if (n % 2 != 0)
             {
@@ -27,7 +23,15 @@ namespace Excercise04
             }
             return false;
         }
-        static bool IsPrime(int n)
+        public static bool IsEven(int n)
+        {
+            if (n % 2 == 0)
+            {
+                return true;
+            }
+            return false;
+        }
+        public static bool IsPrime(int n)
         {
             if (n <= 1)
             {
@@ -40,17 +44,17 @@ namespace Excercise04
             }
             return true;
         }
-        static int Square(int n)
+        public static int Square(int n)
         {
-            int nSqr = 0;
+            int nSqr = 1;
             return nSqr = n*n;
         }
-        static int Cube(int n)
+        public static int Cube(int n)
         {
-            int ncu = 0;
+            int ncu = 1;
             return ncu = n * n * n;
         }
-        static int Pow(int x, int y)
+        public static int Pow(int x, int y)
         {
             if (y == 0) return 1;
             if (y == 1) return x;
@@ -61,11 +65,20 @@ namespace Excercise04
             else
                 return xa * xa * x;
         }
-        static int Abs(int n)
+        public static int Abs(int n)
         {
             return ((n < 0) ? (-n) : (n));
         }
-        static 
+        public static long Factorial(long n)
+        {
+            int nfactorial = 1;
+            if (n == 0) return nfactorial = 1;
+            for (int i = 1; i < n; i++)
+            {
+                nfactorial = nfactorial * i;
+            }
+            return nfactorial;
+        }
 
     }
 }
