@@ -72,5 +72,26 @@ namespace UnitTestProject1
             int resultnega2 = Program.Cube(-2);
             Assert.AreEqual(-8, resultnega2);
         }
+        [TestMethod]
+        public void TesPow()
+        {
+            int result3 = Program.Pow(3, 3);
+            Assert.AreEqual(27, result3);
+
+            int result2 = Program.Pow(2, 3);
+            Assert.AreEqual(8, result2);
+
+            int resultnega2 = Program.Pow(-2, 3);
+            Assert.AreEqual(-8, resultnega2);
+        }
+        [TestMethod]
+        public void TestAbs()
+        {
+            int result3 = Program.Abs(3);
+            Assert.AreEqual(3, result3);
+
+            int resultnega4 = Program.Abs(-4);
+            Assert.AreEqual(4, resultnega4);
+        }
     }
 }
