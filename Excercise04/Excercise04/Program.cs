@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace Excercise04
 {
-   public class Program
+    public class Program
     {
         static void Main(string[] args)
         {
-                if (IsOdd(6) == true)
+            if (IsOdd(6) == true)
                 Console.Write("so le");
 
 
@@ -47,7 +47,7 @@ namespace Excercise04
         public static int Square(int n)
         {
             int nSqr = 1;
-            return nSqr = n*n;
+            return nSqr = n * n;
         }
         public static int Cube(int n)
         {
@@ -60,7 +60,7 @@ namespace Excercise04
             if (y == 1) return x;
             int a = y / 2;
             int xa = Pow(x, a);
-            if (a + a == y) 
+            if (a + a == y)
                 return xa * xa;
             else
                 return xa * xa * x;
@@ -79,6 +79,28 @@ namespace Excercise04
             }
             return nfactorial;
         }
-
+        public static int Ceil(double n)
+        {
+            if (n % 1 != 0)
+            {
+                return (int)n + 1;
+            }
+            return (int)n;
+        }
+        public static int Floor(double n)
+        {
+            return (int)n;
+        }
+        public static int Random(int n)
+        {
+            Random rd = new Random();
+            return n = rd.Next(0, 100000);
+        }
+        public static float random2()
+        {
+            Random rd2 = new Random();
+            return rd2.Next(0, 1);
+        }
     }
 }
+

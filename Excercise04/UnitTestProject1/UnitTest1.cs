@@ -93,5 +93,21 @@ namespace UnitTestProject1
             int resultnega4 = Program.Abs(-4);
             Assert.AreEqual(4, resultnega4);
         }
+        [TestMethod]
+        public void testCeil()
+        {
+            int kq1 = Program.Ceil(4.2);
+            Assert.AreEqual(5, kq1);
+            int kq2 = Program.Ceil(0);
+            Assert.AreEqual(0, kq2);
+            int kq3 = Program.Ceil(5);
+            Assert.AreEqual(5, kq3);
+        }
+        [TestMethod]
+        public void testFloor()
+        {
+            int kq1 = Program.Floor(4.4);
+            Assert.AreEqual(4, kq1);
+        }
     }
 }
